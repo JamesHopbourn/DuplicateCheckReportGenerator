@@ -11,10 +11,7 @@
 </head>
 <script>
   window.onload = function(){
-    let today = new Date();
-    let option = {year:'numeric', month:'2-digit',day:'2-digit', hour:'2-digit',minute:'2-digit',second:'2-digit'};
-    let date = today.toLocaleString('zh-CN',option).replace(/\//g,"-");
-    document.getElementById("createDate").innerHTML = date;
+    document.getElementById("createDate").innerHTML = new Date().toLocaleString().slice(0,19).replace(/\//g, '-');
   }
 </script>
 <body>
