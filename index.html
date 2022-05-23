@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/umi.4e369500.css">
+  <link rel="stylesheet" type="text/css" href="/vendors.7e6ea27d.chunk.css">
+  <link rel="stylesheet" type="text/css" href="/p__report.ba0bc9cf.chunk.css">
+</head>
+<script>
+  window.onload = function(){
+    let today = new Date();
+    let option = {year:'numeric', month:'2-digit',day:'2-digit', hour:'2-digit',minute:'2-digit',second:'2-digit'};
+    let date = today.toLocaleString('zh-CN',option).replace(/\//g,"-");
+    document.getElementById("createDate").innerHTML = date;
+  }
+</script>
+<body>
+  <div
+    class="antd-pro-pages-report-style-box antd-pro-pages-report-style-clear antd-pro-pages-report-style-report_head">
+    <div class="antd-pro-pages-report-style-paper_title">报告列表</div>
+    <div class="ant-table-wrapper">
+      <div class="ant-spin-nested-loading">
+        <div class="ant-spin-container">
+          <div class="ant-table ant-table-bordered">
+            <div class="ant-table-container">
+              <div class="ant-table-content">
+                <table style="table-layout: auto;">
+                  <colgroup></colgroup>
+                  <thead class="ant-table-thead">
+                    <tr>
+                      <th class="ant-table-cell">标题</th>
+                      <th class="ant-table-cell">作者</th>
+                      <th class="ant-table-cell">查重系统</th>
+                      <th class="ant-table-cell">提交时间</th>
+                      <th class="ant-table-cell">状态</th>
+                      <th class="ant-table-cell">文档字数</th>
+                      <th class="ant-table-cell">相似度</th>
+                      <th class="ant-table-cell">操作</th>
+                    </tr>
+                  </thead>
+                  <tbody class="ant-table-tbody">
+                    <tr data-row-key="4298023418774C63B357A2BC6D1B7971" class="ant-table-row ant-table-row-level-0">
+                      <td class="ant-table-cell">无</td>
+                      <td class="ant-table-cell">James Hopbourn</td>
+                      <td class="ant-table-cell">专业版</td>
+                      <td class="ant-table-cell" id="createDate">2022-05-23 18:02:37</td>
+                      <td class="ant-table-cell"><span class="ant-badge ant-badge-status ant-badge-not-a-wrapper"><span
+                            class="ant-badge-status-dot ant-badge-status-success"></span><span
+                            class="ant-badge-status-text">检测完成</span></span></td>
+                      <td class="ant-table-cell">5336</td>
+                      <td class="ant-table-cell">23.61%</td>
+                      <td class="ant-table-cell"><span><a style="color: red;">机器降重</a>
+                          <div class="ant-divider ant-divider-vertical" role="separator"></div>
+                        </span><span><a>下载报告</a>
+                          <div class="ant-divider ant-divider-vertical" role="separator"></div><a
+                           target="_blank" style="color: red;">人工降重</a>
+                          <div class="ant-divider ant-divider-vertical" role="separator"></div>
+                        </span><span><a>删除</a>
+                          <div class="ant-divider ant-divider-vertical" role="separator"></div>
+                        </span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <ul class="ant-pagination ant-table-pagination ant-table-pagination-right" unselectable="unselectable">
+            <li title="上一页" class="ant-pagination-prev ant-pagination-disabled" aria-disabled="true"><button
+                class="ant-pagination-item-link" type="button" tabindex="-1" disabled=""><span role="img"
+                  aria-label="left" class="anticon anticon-left"><svg viewBox="64 64 896 896" focusable="false"
+                    data-icon="left" width="1em" height="1em" fill="currentColor" aria-hidden="true">
+                    <path
+                      d="M724 218.3V141c0-6.7-7.7-10.4-12.9-6.3L260.3 486.8a31.86 31.86 0 000 50.3l450.8 352.1c5.3 4.1 12.9.4 12.9-6.3v-77.3c0-4.9-2.3-9.6-6.1-12.6l-360-281 360-281.1c3.8-3 6.1-7.7 6.1-12.6z">
+                    </path>
+                  </svg></span></button></li>
+            <li title="1" class="ant-pagination-item ant-pagination-item-1 ant-pagination-item-active" tabindex="0"><a
+                rel="nofollow">1</a></li>
+            <li title="下一页" class="ant-pagination-next ant-pagination-disabled" aria-disabled="true"><button
+                class="ant-pagination-item-link" type="button" tabindex="-1" disabled=""><span role="img"
+                  aria-label="right" class="anticon anticon-right"><svg viewBox="64 64 896 896" focusable="false"
+                    data-icon="right" width="1em" height="1em" fill="currentColor" aria-hidden="true">
+                    <path
+                      d="M765.7 486.8L314.9 134.7A7.97 7.97 0 00302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 000-50.4z">
+                    </path>
+                  </svg>
+                </span>
+              </button></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
